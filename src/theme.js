@@ -147,8 +147,65 @@ return {
             background:{
                 default:colors.primary[500],
             }
-        }
+        } 
+        :{
+            primary: {
+                main:colors.primary[500],
+            },
+            secondary:{
+                main:colors.greenAccent[500],
+            },
+            neutral:{
+                dark:colors.grey[700],
+                main:colors.grey[500],
+                light:colors.grey[100],
+            },
+            background:{
+                default:"#fcfcfc",
+            }
+        })
+    },
+    topography: {
+        FontFamily:["Source Sans 3", "sans serif"].join(","),
+        FontSize: 12,
+        h1:{
+            FontFamily:["Source Sans 3", "sans serif"].join(","),
+            FontSize:40,
+        },
+        h2:{
+            FontFamily:["Source Sans 3", "sans serif"].join(","),
+            FontSize:32,
+        },
+        h3:{
+            FontFamily:["Source Sans 3", "sans serif"].join(","),
+            FontSize:40,
+        },
+        h4:{
+            FontFamily:["Source Sans 3", "sans serif"].join(","),
+            FontSize:32,
+        },
+        h5:{
+            FontFamily:["Source Sans 3", "sans serif"].join(","),
+            FontSize:20,
+        },
+        h6:{
+            FontFamily:["Source Sans 3", "sans serif"].join(","),
+            FontSize:16,
+        },
+    },
+};
 
-        )
-    }
+//CONTEXT FOR COLOR MODE
+export const ColorModeContext = createContext({
+    toggleColorMode: () => {}
+})
+export const useMode =() => {
+    const [Mode, setMode] = useState("dark")
+
+    const colorMode = useMemo(
+        () => ({
+            toggleColorMode: () =>
+        })
+    )
+
 }
