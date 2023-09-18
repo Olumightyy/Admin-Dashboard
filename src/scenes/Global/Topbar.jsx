@@ -7,9 +7,15 @@ import  DarkModeOutlinedIcon  from "@mui/icons-material/DarkModeOutlined";
 import  NotificationsOutlinedIcon  from "@mui/icons-material/NotificationsOutlined";
 import  SettingsOutlinedIcon  from "@mui/icons-material/SettingsOutlined";
 import  PersonOutlinedIcon  from "@mui/icons-material/PersonOutlined";
-import  SearchOutlinedIcon  from "@mui/icons-material/SearchOutlined";
+import  SearchIcon  from "@mui/icons-material/Search";
 
 const Topbar = () =>{
-    return <div>Topbar</div>
+    const theme = useTheme();
+    const colors = tokens(theme.palette.mode);
+    const ColorMode = useContext(ColorModeContext)
+    return (<Box display="flex" justifyContent= "space-between" p ={2}>
+        {/*Search*/}
+    </Box>
+    );
 }
 export default Topbar;
